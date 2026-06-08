@@ -3,60 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Small Means Productions</title>
 <link rel="icon" type="image/png" href="images/favicon.png">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#070707;color:#f4f1e8;font-family:Segoe UI,Arial,sans-serif;line-height:1.6}
-nav{position:fixed;top:0;width:100%;background:rgba(0,0,0,.88);backdrop-filter: blur(10px);z-index:10}
-.nav-container{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
-.nav-logo{color:#d4af37;font-weight:700;font-size:1.2rem}
-.nav-links a{color:#fff;text-decoration:none;margin-left:22px;font-weight:600}
+
+body{
+  font-family:Segoe UI,Arial,sans-serif;
+  background:#f6efd8;
+  color:#1f1f1f;
+  line-height:1.6;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:10;
+  background:rgba(0,0,0,.72);
+  backdrop-filter:blur(8px);
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+}
+
+.nav-logo{
+  color:#d4af37;
+  font-weight:800;
+  font-size:1.2rem;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:700;
+}
+
 .nav-links a:hover{color:#d4af37}
 
 .hero{
-height:500px;
-background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.82)),url("images/hero-banner.png");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:flex-end;
-justify-content:center;
-text-align:center;
-padding:120px 25px 70px;
+  min-height:620px;
+  background:
+    linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.35)),
+    url("images/hero-banner.png");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:110px 24px 70px;
 }
-.hero-content{max-width:850px}
-.hero-logo{width:145px;margin-bottom:22px}
-.hero h1{font-size:3.2rem;margin-bottom:8px}
-.tagline{color:#d4af37;font-size:1.25rem;letter-spacing:2px;margin-bottom:18px}
-.hero p{font-size:1.2rem;color:#f1ead8}
+
+.hero-content{
+  max-width:900px;
+  color:white;
+  text-shadow:0 3px 14px rgba(0,0,0,.7);
+}
+
+.hero h1{
+  font-family:Georgia, 'Times New Roman', serif;
+  font-size:4.3rem;
+  line-height:1.05;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#f3d36b;
+}
+
+.hero .subtitle{
+  margin-top:18px;
+  font-size:1.35rem;
+  letter-spacing:5px;
+  color:#fff3c2;
+  text-transform:uppercase;
+}
+
+.hero .tagline{
+  margin-top:20px;
+  font-size:1.25rem;
+  color:white;
+}
 
 .section{
-max-width:1180px;
-margin:auto;
-padding:40px 24px;
+  max-width:1180px;
+  margin:auto;
+  padding:60px 24px;
 }
-.section h2{text-align:center;color:#d4af37;font-size:2.2rem;margin-bottom:25px}
-.mission{max-width:850px;margin:auto;text-align:center;font-size:1.15rem;color:#ddd}
 
-.creator-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin-top:42px}
-.card{background:#111;border:1px solid #302713;border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.35)}
-.card img{width:100%;display:block}
-.card-body{padding:24px;text-align:center}
-.card h3{color:#d4af37;font-size:1.5rem;margin-bottom:10px}
-.card p{color:#ddd;margin-bottom:20px}
-.button{display:inline-block;background:#d4af37;color:#111;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:6px}
-.button.secondary{background:transparent;color:#d4af37;border:1px solid #d4af37}
+.section h2{
+  text-align:center;
+  color:#9b7422;
+  font-size:2.3rem;
+  margin-bottom:24px;
+}
 
-.footer{text-align:center;padding:38px 20px;border-top:1px solid #241d0d;color:#aaa}
+.mission{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  font-size:1.15rem;
+}
+
+.creator-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  margin-top:42px;
+}
+
+.card{
+  background:white;
+  border-radius:16px;
+  overflow:hidden;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.card img{
+  width:100%;
+  display:block;
+}
+
+.card-body{
+  padding:25px;
+}
+
+.card h3{
+  color:#9b7422;
+  font-size:1.5rem;
+  margin-bottom:12px;
+}
+
+.button{
+  display:inline-block;
+  margin-top:18px;
+  background:#d4af37;
+  color:#111;
+  text-decoration:none;
+  font-weight:800;
+  padding:12px 22px;
+  border-radius:7px;
+}
+
+.button.secondary{
+  background:transparent;
+  border:1px solid #9b7422;
+  color:#9b7422;
+}
+
+.footer{
+  background:#101010;
+  color:white;
+  text-align:center;
+  padding:38px 20px;
+}
+
 .gold{color:#d4af37}
 
-@media(max-width:800px){
-.nav-links{display:none}
-.hero{min-height:72vh;padding-top:100px}
-.hero h1{font-size:2.25rem}
-.hero-logo{width:115px}
+@media(max-width:760px){
+  .nav-links{display:none}
+
+  .hero{
+    min-height:520px;
+    background-position:center;
+  }
+
+  .hero h1{
+    font-size:2.35rem;
+    letter-spacing:1.5px;
+  }
+
+  .hero .subtitle{
+    font-size:1rem;
+    letter-spacing:3px;
+  }
+
+  .hero .tagline{
+    font-size:1rem;
+  }
 }
 </style>
 </head>
@@ -78,13 +211,18 @@ padding:40px 24px;
 
 <section class="hero">
   <div class="hero-content">
-    </div>
+    <h1>Small Means<br>Productions</h1>
+    <div class="subtitle">Music • Story • Purpose</div>
+    <div class="tagline">Media that inspires</div>
+  </div>
 </section>
 
 <section class="section" id="mission">
   <h2>Our Mission</h2>
   <div class="mission">
-    We create and support meaningful projects that inspire faith, reflection, wonder, and hope — from music and scripture-based storytelling to future books, videos, art, and creative collaborations.
+    We create and support meaningful projects that inspire faith, reflection,
+    wonder, and hope — from music and scripture-based storytelling to future
+    books, videos, art, and creative collaborations.
   </div>
 </section>
 
@@ -92,11 +230,12 @@ padding:40px 24px;
   <h2>Featured Creators</h2>
 
   <div class="creator-grid">
+
     <div class="card">
       <img src="images/Small-Means-Project-AC.png" alt="Small Means Project">
       <div class="card-body">
         <h3>Small Means Project</h3>
-       <p>Original music inspired by scripture, faith, hope, and personal reflection.</p>
+        <p>Original music inspired by scripture, faith, hope, and personal reflection.</p>
         <a href="https://smallmeansproject.com" class="button">Explore Project</a>
       </div>
     </div>
@@ -117,13 +256,15 @@ padding:40px 24px;
         <a href="#" class="button secondary">Learn More</a>
       </div>
     </div>
+
   </div>
 </section>
 
 <section class="section" id="projects">
   <h2>Current Projects</h2>
   <div class="mission">
-    The Book of Mormon Music Project is currently in development, with additional music, books, videos, and creative works planned for the future.
+    The Book of Mormon Music Project is currently in development, with additional
+    music, books, videos, and creative works planned for the future.
   </div>
 </section>
 
