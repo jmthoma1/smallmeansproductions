@@ -21,6 +21,7 @@ body{background:#0d2534;color:#f8fbff}
 .album-head{display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:end;margin-bottom:34px}.album-head img{width:100%;box-shadow:0 14px 36px rgba(0,0,0,.42)}
 .eyebrow{color:#38dbe0;font-size:.76rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}h1{font-size:clamp(2.45rem,6vw,4.7rem);line-height:1.02;margin-bottom:10px;color:white}
 .meta{font-weight:800;color:#dce8ee;font-size:.95rem}.streaming-banner{display:inline-block;margin-top:18px;padding:10px 14px;border-radius:8px;background:rgba(56,219,224,.14);border:1px solid rgba(56,219,224,.42);color:#eafcff;font-weight:900}
+.streaming-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.streaming-link{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(56,219,224,.42);border-radius:8px;background:rgba(255,255,255,.1);color:#eafcff;text-decoration:none;font-weight:900;font-size:.92rem;padding:9px 12px}.streaming-link:hover{background:rgba(56,219,224,.18);border-color:#38dbe0}.streaming-link img{width:18px;height:18px;border-radius:4px}
 .track-list{margin-top:22px}.track-row{display:grid;grid-template-columns:34px 1fr 70px;gap:12px;align-items:center;border-top:1px solid rgba(255,255,255,.17);padding:15px 8px;color:#edf6f9}.track-row:hover{background:rgba(255,255,255,.09)}.track-number,.track-duration{color:#b7c8d0;font-weight:800;font-size:.9rem}.track-title{font-weight:900}.track-title span{display:block;width:max-content;margin-top:2px;background:#dce8ee;color:#294251;border-radius:2px;font-size:.62rem;line-height:1;padding:2px 4px}
 .back-link{color:#38dbe0;text-decoration:none;font-weight:900}.footer{background:#07151d}
 @media(max-width:700px){.album-head{grid-template-columns:1fr;align-items:start}.album-head img{max-width:280px}h1{font-size:2.5rem}}
@@ -37,7 +38,12 @@ body{background:#0d2534;color:#f8fbff}
       <h1>The Playful Tradewinds</h1>
       <div class="meta">Aether and Pine</div>
       <div class="meta">8 songs • 17:21</div>
-      <div class="streaming-banner">Available on all major streaming platforms</div>
+      <div class="streaming-links" aria-label="The Playful Tradewinds streaming links">
+        <a class="streaming-link" href="https://open.spotify.com/album/4bca47wlNfuruz8wwGMkUo" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=open.spotify.com&amp;sz=32" alt="">Spotify</a>
+        <a class="streaming-link" href="https://music.apple.com/us/album/the-playful-tradewinds/6776428979" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=music.apple.com&amp;sz=32" alt="">Apple Music</a>
+        <a class="streaming-link" href="https://www.youtube.com/watch?v=cSyhb4qaKz0&amp;list=OLAK5uy_mvDycI09gUhs9UvHpzZKBJEKhYLandrqU" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=music.youtube.com&amp;sz=32" alt="">YouTube Music</a>
+        <a class="streaming-link" href="https://music.amazon.com/albums/B0H3VZ61N4" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=music.amazon.com&amp;sz=32" alt="">Amazon Music</a>
+      </div>
     </div>
   </section>
   <section class="track-list" aria-label="The Playful Tradewinds songs">
